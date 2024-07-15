@@ -1,3 +1,5 @@
+package practical2
+
 import scala.collection.generic.BitOperations
 
 object Forth {
