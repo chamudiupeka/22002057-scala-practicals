@@ -1,3 +1,5 @@
+package practical2
+
 object Third {
 
   def main(args: Array[String]): Unit = {
