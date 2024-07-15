@@ -1,3 +1,5 @@
+package practical2
+
 object Second {
   def main(args: Array[String]): Unit = {
     var a = 2
