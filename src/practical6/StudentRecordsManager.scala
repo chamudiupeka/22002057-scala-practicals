@@ -1,10 +1,12 @@
+package practical6
+
 import scala.io.StdIn.readLine
 
 object StudentRecordsManager {
 
-  // a. Function to get student info
+
   def getStudentInfo(): (String, Int, Int, Double, Char) = {
-    // Function to calculate percentage and grade
+
     def calculateGrade(marks: Int, totalMarks: Int): (Double, Char) = {
       val percentage = (marks.toDouble / totalMarks) * 100
       val grade = percentage match {
@@ -21,7 +23,7 @@ object StudentRecordsManager {
     (name, marks, totalMarks, percentage, grade)
   }
 
-  // b. Function to print student record
+
   def printStudentRecord(studentRecord: (String, Int, Int, Double, Char)): Unit = {
     val (name, marks, totalMarks, percentage, grade) = studentRecord
     println(s"Name: $name")
@@ -31,7 +33,7 @@ object StudentRecordsManager {
     println(s"Grade: $grade")
   }
 
-  // c. Function to validate input
+
   def validateInput(name: String, marks: Int, totalMarks: Int): (Boolean, Option[String]) = {
     if (name.isEmpty) {
       (false, Some("Name cannot be empty"))
@@ -44,7 +46,7 @@ object StudentRecordsManager {
     }
   }
 
-  // d. Function to get student info with retry
+
   def getStudentInfoWithRetry(): (String, Int, Int) = {
     var isValid = false
     var name = ""
