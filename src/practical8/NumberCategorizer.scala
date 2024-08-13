@@ -11,11 +11,11 @@ object NumberCategorizer {
 
     val input = args(0).toInt
 
-    // Define lambda functions for pattern matching
+
     val isMultipleOfThree = (n: Int) => n % 3 == 0
     val isMultipleOfFive = (n: Int) => n % 5 == 0
 
-    // Pattern matching to categorize the input number
+
     val message = (input match {
       case n if isMultipleOfThree(n) && isMultipleOfFive(n) => "Multiple of Both Three and Five"
       case n if isMultipleOfThree(n) => "Multiple of Three"
@@ -23,7 +23,7 @@ object NumberCategorizer {
       case _ => "Not a Multiple of Three or Five"
     })
 
-    // Print the corresponding message
+
     println(message)
   }
 }
