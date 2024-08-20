@@ -20,6 +20,9 @@ object CaesarCipher {
   }
 
 
+
+
+
   def cipher(text: String, shift: Int, algo: (String, Int) => String): String = {
     algo(text, shift)
   }
